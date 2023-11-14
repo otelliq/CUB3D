@@ -6,7 +6,7 @@
 /*   By: otelliq <otelliq@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/04 19:24:19 by otelliq           #+#    #+#             */
-/*   Updated: 2023/11/09 21:58:11 by otelliq          ###   ########.fr       */
+/*   Updated: 2023/11/14 22:30:24 by otelliq          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,11 +80,22 @@ int main(int ac, char **av)
 	ft_colors(m_d, m_c);
 	checker00(m_c, m_d->map);
 	fill_map(m_d);
-	if (!borders_checker(m_d))
+	if(one_check(m_d) == 0)
+		error_printf("FLIX FLOX");
+	zero_check(m_d);
+	if (!borders_checker(m_d) || !border_check(m_d))
 	{
 		printf("Error, invalid map!");
 		exit(0);
 	}
+	if (component_check(m_d) == 0)
+	printf("POPOPOPO");
+
+	// 	if (player_checker(m_d->map_cub) != 1)
+	// {
+		printf("%d\n", player_checker(m_d->map_cub));
+		// exit(0);
+	// }
 
 	return 0;
 }

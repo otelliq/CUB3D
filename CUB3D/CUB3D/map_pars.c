@@ -6,7 +6,7 @@
 /*   By: otelliq <otelliq@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/12 12:48:09 by otelliq           #+#    #+#             */
-/*   Updated: 2023/11/01 10:58:14 by otelliq          ###   ########.fr       */
+/*   Updated: 2023/11/14 22:35:39 by otelliq          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,7 +70,7 @@ void	fill_map(t_map_data *m_d)
 		m_d->map_cub[j] = NULL;
 	}
 	else if(!check_to_fill(m_d))
-	error_printf("Invalid map!");
+	error_printf("Invalid mappppp!");
 }
 int	check_to_fill(t_map_data *m_d)
 {
@@ -82,7 +82,7 @@ int	check_to_fill(t_map_data *m_d)
 		j = 0;
 		while(m_d->map[i][j])
 		{
-			if(m_d->map[i][j] != ' ' && m_d->map[i][j] != '\n' && m_d->map[i][j] != '1'&& m_d->map[i][j] != '0'&& m_d->map[i][j] != 'N' && m_d->map[i][j] != '\t')
+			if(m_d->map[i][j] != ' ' && m_d->map[i][j] != '\n' && m_d->map[i][j] != '1'&& m_d->map[i][j] != '0'&& m_d->map[i][j] != 'N')
 			return 0;
 			else if(m_d->map[i][j] == '\n')
 			componentCounts[0]++;

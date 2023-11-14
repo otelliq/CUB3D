@@ -6,7 +6,7 @@
 /*   By: otelliq <otelliq@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/04 19:13:22 by otelliq           #+#    #+#             */
-/*   Updated: 2023/11/01 11:05:33 by otelliq          ###   ########.fr       */
+/*   Updated: 2023/11/14 22:29:43 by otelliq          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,4 +64,8 @@ int	col_size(char **av);
 int	check_to_fill(t_map_data *m_d);
 int	ft_len(t_map_data *m_d);
 void	zero_check(t_map_data *m_d);
+int border_check(t_map_data *m_d);
+int	one_check(t_map_data *m_d);
+int	check_to_check(t_map_data *m_d);
+int	component_check(t_map_data *m_d);
 #endif

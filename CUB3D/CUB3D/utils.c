@@ -6,7 +6,7 @@
 /*   By: otelliq <otelliq@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/05 10:41:45 by otelliq           #+#    #+#             */
-/*   Updated: 2023/11/09 19:42:36 by otelliq          ###   ########.fr       */
+/*   Updated: 2023/11/14 16:36:49 by otelliq          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,13 +19,6 @@ void	checker00(t_map_colors *m_c, char __unused **map)
 		printf("Error, invalid RGB!");
 		exit(0);
 	}
-	// if (player_checker(map) != 1)
-	// {
-	// 	printf("Error, invalid player count!");
-	// 	exit(0);
-	// }
-
-
 }
 
 // void	map_filler(t_map_data *m_d)
